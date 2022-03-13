@@ -125,14 +125,14 @@ img{
     display: block;
     margin: 0.1875rem;
     width: 1.875rem;
-    background: #292929;
+    background: #4F548A;
  }
 
 
 
 .gamburger.activ span:first-of-type {
     opacity: 0;
-    background: #292929;
+    background: #fff;
     position: fixed; 
 }
       
@@ -140,7 +140,7 @@ img{
 .gamburger.activ span:nth-of-type(2) {
     top: 3%;
     transform: rotate(45deg);
-    background: #292929;
+    background: #fff;
     position: fixed; 
 }
       
@@ -148,7 +148,7 @@ img{
 .gamburger.activ span:nth-of-type(3) {
     top: 4%;
     transform: translate(0%, -200%) rotate(-45deg);
-    background: #292929;
+    background: #fff;
     position: fixed; 
 }
 
@@ -191,16 +191,12 @@ text-decoration: none;
     opacity: 0.5;
 }
 
-
-@media (max-width: 1140px) {
-html {
-    font-size: 16px;
-}
-.container {
-    max-width: 700px;
+.privet{
+    display:none;
 }
 
-}
+
+
 
 @media (max-width: 768px) {
 html {
@@ -210,10 +206,49 @@ html {
     max-width: 600px;
 }
 
-.menu {
+
+.privet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1.25rem;
+    height: 100%;
+    width: 20%;
+    background: #292929;
+    overflow: hidden;
+    z-index: 100;
     display: none;
 }
 
+.privet.activ {
+    display: block;
+}
+   
+.menu__phone{
+    position: relative;
+    top: 20%;
+}
+          
+.menu__phone__list {
+    display: flex;
+    flex-direction: column; 
+}
+         
+.menu__phone__icon {
+    display: flex;
+     
+}
+
+.menu__phone__title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-decoration: none;
+} 
+          
 .gamburger {
     display: block;
     width: 30px;
@@ -229,7 +264,7 @@ html {
     display: block;
     margin: 0.1875rem;
     width: 1.875rem;
-    background: #292929;
+    background: #4F548A;
 }
 
 .header__mobile {
@@ -256,25 +291,20 @@ html {
     display: none;
 }
 
+.privet {
+    width: 30%;
+    
+}
+
 .gamburger {
     display: block;
     width: 30px;
     height: 30px;
     position: relative;
+    right: 7rem;
    
 }
 
-.gamburger span {
-    transition: 1s;
-    height: 0.3rem;
-    border-radius: 0.125rem;
-    display: block;
-    margin: 0.1875rem;
-    width: 1.875rem;
-    background: #292929;
-    position: relative;
-    right: 4rem;
-}
 
 .header__mobile {
     display: flex;
@@ -287,7 +317,6 @@ html {
       
 }
 }
-
 
 /*/header*/
 
