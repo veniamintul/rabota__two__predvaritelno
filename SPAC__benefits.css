@@ -319,6 +319,14 @@ html {
         min-height: calc(110vh - 70px);
      }
     
+    .SPAC__benefits__name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    
     .SPAC__benefits__text{
         font-size: 1.5rem;  
     }
@@ -335,6 +343,136 @@ html {
     }
     
 }
+
+/*tablet*/
+.resp-tab {
+    border-radius: 5px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.resp-tab th, .resp-tab td {
+    padding: 10px 20px;
+    font-size: 13px;
+    border: none;    
+    vertical-align: top;
+    border: 2px solid #4A6F74;
+
+}
+
+.three:hover{
+    background: #4F548A;
+}
+
+.four:hover{
+    background: #4F548A;
+}
+
+
+.two:hover{
+    background: #4F548A;
+}
+
+
+.resp-tab th {
+    border: 2px solid #4A6F74;    
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;  
+}
+
+.resp-tab td span {
+    display: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;        
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+
+.resp-tab {
+    border: 4px solid transparent;
+ }
+
+ .resp-tab  td {
+    position: relative;
+}
+.resp-tab  td:hover::before  {
+    content: ''; 
+    background: #4F548A;; 
+    position: absolute; 
+    height: 2000px; /* Высота колонки */
+    width: 100%; 
+    left: 0; 
+    top: -1000px; /* Положение от верхнего края */
+    z-index: -1;
+    color: #fff;  /*к сожалению так и неразобрался как менять цвет шрифта при наведении*/
+    
+    
+} 
+ .one{
+     background: #fff;
+ }
+@media(max-width: 768px) {
+    .resp-tab thead {
+        display: none;
+    }
+    .resp-tab tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .resp-tab td {
+        margin: 0 -1px -1px 0;
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+    }
+    .resp-tab td span {
+        display: block;
+        text-align: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 130%; 
+    }
+
+    .resp-tab td {
+        position: relative;
+    }
+    .resp-tab td:hover::before {
+        background: none;
+    }
+
+   
+
+}
+@media(max-width: 480px) {
+    .resp-tab td {
+        width: 100%;
+    }
+}
+
+
+
+
+
 
 
 
