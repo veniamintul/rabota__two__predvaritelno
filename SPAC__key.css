@@ -291,57 +291,20 @@ html {
 
 /*/header*/
 
-
-/*.credentials{
-    margin-top: -2%;
-}*/
-
-.SPAC__box__one{
+.SPAC__key__name{
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.SPAC__content__one{
-    position: relative;
-    margin-bottom: -80px;
-    text-decoration: none;
-}
-
-.SPAC__text{
-font-style: normal;
-font-weight: 600;
-font-size: 4.5rem;
-line-height: 110%;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-color: #5953A8;
-}
-
-.SPAC__subtitle{
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 125%;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-color: #1E1E1E;
-margin-top: 20px;
-}
-
-
-
-.SPAC__title{
+.SPAC__key__text{
     font-style: normal;
     font-weight: 600;
-    font-size: 3.1rem;
-    line-height: 125%;
+    font-size: 2.5rem;
+    line-height: 110%;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-    color: #5953A8; 
-     
+    color: #5953A8;
 }
 
 @media (max-width: 768px) {
@@ -355,33 +318,11 @@ margin-top: 20px;
     .main {
         min-height: calc(110vh - 70px);
      }
-     .SPAC__content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     
-    .SPAC__text{
-        font-size: 3rem;  
+    .SPAC__key__text{
+        font-size: 1.5rem;  
     }
-
-    .SPAC__box__one{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-    }
-    .SPAC__subtitle{
-        text-align: center;
-    }
-
-    .SPAC__content__one{
-        text-align: center; 
-        margin-top: 30px; 
-    }
-    .SPAC__title{
-        font-size: 2.8rem; 
-    }
+   
 }
 
 @media (max-width: 480px) {
@@ -392,20 +333,15 @@ margin-top: 20px;
         max-width: 480px;
         min-width: 320px;
     }
-    .credentials__text{
-        font-size: 3rem;  
-    }
-
-    .SPAC__content__one{
-        margin-top: 50px;  
-    }
-
-    .SPAC__title{
-        font-size: 2.1rem; 
-    }
+    
 }
 
+
+
+
+
 /*footer*/
+
 .footer{
     height: 70px;
     display: flex;
