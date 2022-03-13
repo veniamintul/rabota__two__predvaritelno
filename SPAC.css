@@ -296,7 +296,18 @@ html {
     margin-top: -2%;
 }
 
-.credebtials__text{
+.SPAC__box__one{
+    display: flex;
+    flex-direction: column;
+}
+
+.SPAC__content__one{
+    position: relative;
+    margin-bottom: -80px;
+    text-decoration: none;
+}
+
+.SPAC__text{
 font-style: normal;
 font-weight: 600;
 font-size: 4.5rem;
@@ -305,6 +316,93 @@ display: flex;
 align-items: center;
 letter-spacing: 0.03em;
 color: #5953A8;
+}
+
+.SPAC__subtitle{
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 125%;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+color: #1E1E1E;
+margin-top: 20px;
+}
+
+
+
+.SPAC__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.1rem;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #5953A8; 
+     
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+    .main {
+        min-height: calc(110vh - 70px);
+     }
+     .SPAC__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .SPAC__text{
+        font-size: 3rem;  
+    }
+
+    .SPAC__box__one{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .SPAC__subtitle{
+        text-align: center;
+    }
+
+    .SPAC__content__one{
+        text-align: center; 
+        margin-top: 30px; 
+    }
+    .SPAC__title{
+        font-size: 2.8rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+      .container {
+        max-width: 480px;
+        min-width: 320px;
+    }
+    .credentials__text{
+        font-size: 4rem;  
+    }
+
+    .SPAC__content__one{
+        margin-top: 50px;  
+    }
+
+    .SPAC__title{
+        font-size: 2.1rem; 
+    }
 }
 
 /*footer*/

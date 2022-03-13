@@ -377,6 +377,26 @@ color: #1E1E1E;
     letter-spacing: 0.03em;
 }
 
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 600px;
+    }
+    .main {
+        min-height: calc(88vh - 70px);
+     }
+    
+     .contacts__text{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+    } 
+    
+        
+}
+
 
 
 /*footer*/
@@ -429,6 +449,7 @@ html {
 .main {
     min-height: calc(88vh - 70px);
  }
+
 
     
 }

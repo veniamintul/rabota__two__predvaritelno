@@ -351,6 +351,11 @@ color: #1E1E1E;
         max-width: 600px;
     }
 
+    .glavnaya__text{
+        font-size: 3rem;
+    }
+
+
     .glavnaya__box{
         display:flex;
         flex-direction: column;
