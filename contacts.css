@@ -397,18 +397,29 @@ html {
 }
 
 .map__section{
-    height: 20vh;
-    width:  20vw;
-    margin-right: 60px;
+    height: 45vh;
+    width:  55vw;
+   
 }
+
+/* Убираем лишнии кнопки и ползунок масштаба */
+.map .ymaps-2-1-79-controls__toolbar_right,
+.map .ymaps-2-1-79-controls__toolbar_left,
+.map .ymaps-2-1-79-zoom__scale {
+    display: none;
+}
+
+
+
 
 .contacts__content{
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .contacts__link{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .contacts__link__text{
@@ -418,6 +429,7 @@ font-size: 30px;
 line-height: 150%;
 letter-spacing: 0.03em;
 color: #1E1E1E;
+margin-top: 0;
 }
 
 .adress{
@@ -468,13 +480,70 @@ color: #1E1E1E;
         min-height: calc(88vh - 70px);
      }
     
+     .contacts__content{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     } 
      .contacts__text{
         font-style: normal;
         font-weight: 600;
         font-size: 3rem;
     } 
+
+    .contacts__box__one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     
+    .contacts__link{
+        margin-bottom: 0px;
+    }
+    
+    .contacts__phone__text,.adress__link,.contacts__link__text,.contacts__tel{
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    element.style{
+        display: block;
+        width: 430px;
+        height: 400px;
+    }
+
+    .map__section{
+        position: relative;
+        margin-left: -5rem;
+    }
+
+    .adress,.adress__link{
+        margin-bottom: 0;
+    }
         
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 480px;
+        min-width: 320px;
+    }
+
+    .map{
+        height: 40vh;
+        width:  80vw;
+        position: relative;
+        left: -5rem;
+    }
+
+    .adress__link{
+        text-align: center;
+    }
+    
 }
 
 

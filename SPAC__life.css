@@ -362,7 +362,7 @@ html {
 }
 
 .span__logo:nth-of-type(2){
-    background:  #989B9F;
+    background:  #989B9F;;
 }
 
 .span__logo:nth-of-type(3){
@@ -397,14 +397,14 @@ html {
     display: block;
     margin: 0.1875rem;
     width: 1.875rem;
-    background: #4F548A;
+    background: #292929;
  }
 
 
 
 .gamburger.activ span:first-of-type {
     opacity: 0;
-    background: #fff;
+    background: #292929;
     position: fixed; 
 }
       
@@ -412,7 +412,7 @@ html {
 .gamburger.activ span:nth-of-type(2) {
     top: 3%;
     transform: rotate(45deg);
-    background: #fff;
+    background: #292929;
     position: fixed; 
 }
       
@@ -420,7 +420,7 @@ html {
 .gamburger.activ span:nth-of-type(3) {
     top: 4%;
     transform: translate(0%, -200%) rotate(-45deg);
-    background: #ffff;
+    background: #292929;
     position: fixed; 
 }
 
@@ -533,7 +533,6 @@ html {
     width: 30px;
     height: 30px;
     position: relative;
-    right: 7rem;
    
 }
 
@@ -546,7 +545,7 @@ html {
     width: 1.875rem;
     background: #292929;
     position: relative;
-    
+    right: 4rem;
 }
 
 .header__mobile {
@@ -564,12 +563,12 @@ html {
 
 /*/header*/
 
-.SPAC__key__name{
+.SPAC__life__name{
     display: flex;
     align-items: center;
 }
 
-.SPAC__key__text{
+.SPAC__life__text{
     font-style: normal;
     font-weight: 600;
     font-size: 2.5rem;
@@ -592,7 +591,7 @@ html {
         min-height: calc(110vh - 70px);
      }
     
-    .SPAC__key__text{
+    .SPAC__life__text{
         font-size: 1.5rem;  
     }
    
@@ -606,142 +605,8 @@ html {
         max-width: 480px;
         min-width: 320px;
     }
-
-    .SPAC__key__name {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     
 }
-
-/*tablet*/
-.resp-tab {
-    border-radius: 5px;
-    font-weight: normal;
-    border: none;
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.resp-tab th, .resp-tab td {
-    padding: 10px 20px;
-    font-size: 13px;
-    border: none;    
-    vertical-align: top;
-    border: 2px solid red;
-
-}
-
-
-.resp-tab th {
-    border: 2px solid red;    
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #000000;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 130%;  
-}
-
-.resp-tab td span {
-    display: none;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 36px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #000000;        
-    padding: 5px 10px;
-    position: absolute;
-    top: 0;
-    left: 0;    
-}
-
-.resp-tab {
-    border: 4px solid red;
- }
-
- .resp-tab  td {
-    position: relative;
-}
-
-.green{
-    color: #fff;
-    background: #989B9F;
-}
-
-.blue{
-    color: #fff;
-    background:  #4F548A;  
-}
-
-/*@media(max-width: 768px) {
-    .resp-tab thead {
-        display: none;
-    }
-    .resp-tab tr {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-    }
-    .resp-tab td {
-        margin: 0 -1px -1px 0;
-        padding-top: 35px;
-        position: relative;
-        width: 50%;
-    }
-    .resp-tab td span {
-        display: block;
-        text-align: center;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 130%; 
-    }
-
-    .resp-tab td {
-        position: relative;
-    }
-    .resp-tab td:hover::before {
-        background: none;
-    }
-}*/
-
-@media(max-width: 480px) {
-    .resp-tab thead {
-        display: none;
-    }
-    .resp-tab tr {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 60px;
-    }
-    .resp-tab td {
-        margin: 0 -1px -1px 0;
-        padding-top: 35px;
-        position: relative;
-        width: 100%;
-        text-align: center;
-    }
-    .resp-tab td span {
-        display: block;
-        text-align: center;
-        font-style: normal;
-        font-weight: 200;
-        font-size: 20px;
-        line-height: 130%; 
-    }
-
-}
-
 
 
 
