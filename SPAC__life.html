@@ -370,7 +370,32 @@
             
         </div>
     </div>
-<div class="pup__up"></div>    
-<script src="js/privet.js"></script>   
+<div class="pup__up">
+
+<form id="myForm">
+
+    <span class="close-btn">X</span>
+    <div class="box__field">
+    <div class="field">
+        <input type="text" placeholder="имя" name="name" class="text"  required>
+        <div class="error"></div>
+    </div>
+    <div class="field__one">
+        <input type="text" placeholder="телефон" name="phone" class="text" required>
+        <div class="error"></div>
+    </div>
+    <div class="field__two">
+        <input type="email" placeholder="email" name="email" class="text"   required>
+        <div class="error"></div>
+    </div>
+
+    <button id="send" class="send">отправить</button>
+    </div>
+</form> 
+
+</div> 
+<script src="js/privet.js"></script>
+<script src="js/form.js"></script>
+<script src="js/send.js"></script>     
 </body>
 </html>
